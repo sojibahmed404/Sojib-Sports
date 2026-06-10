@@ -1,5 +1,6 @@
 // Channel Data with categories and metadata
 const channels = [
+    // --- Public/Global Channels (Work everywhere without permissions) ---
     { 
         id: "btv", 
         name: "BTV National", 
@@ -9,16 +10,16 @@ const channels = [
         logo: "🇧🇩" 
     },
     { 
-        id: "tsports", 
-        name: "T Sports HD", 
+        id: "tsports_public", 
+        name: "T Sports HD (Global)", 
         url: "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1779283784&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=3b4c5a2cfa872fa7f91ffbfb4aa0f658", 
         category: "sports", 
         quality: "HD", 
         logo: "⚽" 
     },
     { 
-        id: "ptvsports", 
-        name: "PTV Sports HD", 
+        id: "ptvsports_public", 
+        name: "PTV Sports HD (Global)", 
         url: "https://tvsen5.aynaott.com/PtvSports/index.m3u8", 
         category: "sports", 
         quality: "HD", 
@@ -41,8 +42,8 @@ const channels = [
         logo: "🏆" 
     },
     { 
-        id: "gtv", 
-        name: "GTV HD", 
+        id: "gtv_public", 
+        name: "GTV HD (Global)", 
         url: "https://itpolly.iptv.digijadoo.net/live/gazi_tv/chunks.m3u8", 
         category: "tv", 
         quality: "HD", 
@@ -73,8 +74,8 @@ const channels = [
         logo: "🎨" 
     },
     { 
-        id: "atnbangla", 
-        name: "ATN Bangla HD", 
+        id: "atnbangla_public", 
+        name: "ATN Bangla HD (Global)", 
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
@@ -105,8 +106,8 @@ const channels = [
         logo: "📺" 
     },
     { 
-        id: "somoy", 
-        name: "Somoy TV HD", 
+        id: "somoy_public", 
+        name: "Somoy TV HD (Global)", 
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
@@ -121,8 +122,8 @@ const channels = [
         logo: "📰" 
     },
     { 
-        id: "independent", 
-        name: "Independent TV HD", 
+        id: "independent_public", 
+        name: "Independent TV (Global)", 
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
@@ -176,6 +177,98 @@ const channels = [
         quality: "HD", 
         logo: "🕌" 
     },
+
+    // --- Local Network Channels (Work only on user's ISP network) ---
+    { 
+        id: "tsports", 
+        name: "T Sports HD (Local)", 
+        url: "http://172.16.29.2:8090/hls/tsportshd.m3u8", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "⚽" 
+    },
+    { 
+        id: "ptvsports", 
+        name: "PTV Sports HD (Local)", 
+        url: "http://10.99.99.99:8082/PTV-SPORTS-HD/tracks-v1a1/mono.m3u8?token=f76b92709d51803cdf1d7d4fc663f3c1dab8dcaa-ff92cc862d458b4b124afe2887cfe34d-1781121462-1781110662", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "🏏" 
+    },
+    { 
+        id: "asports", 
+        name: "A Sports HD (Local)", 
+        url: "http://10.99.99.99:8082/A.SPORTS.HD/tracks-v1a1/mono.m3u8?token=1fc198421320e78f938a760162f4e2ed0cb60ce-194b2c0ebe8e327b2fa81b2632343df6-1781121503-1781110703", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "🏏" 
+    },
+    { 
+        id: "starsports1", 
+        name: "Star Sports 1 HD (Local)", 
+        url: "http://10.99.99.99:8082/STAR.SPORTS1.HD/tracks-v1a1/mono.m3u8?token=584c34f8a8c5cc19ea4d71ec4c197dea3f390bcd-a3bfbf778837d5fe510761d2abc49e2f-1781121527-1781110727", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "⚽" 
+    },
+    { 
+        id: "starsports_sel1", 
+        name: "Star Sports Select 1 (Local)", 
+        url: "http://10.99.99.99:8082/STAR.SPORTS-SEL1.HD/tracks-v1a1/mono.m3u8?token=2ffbde34d181225ce3397392dfdd02e7f82be7c9-b18f43a4c8247927c4185846fcee8711-1781121674-1781110874", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "🎾" 
+    },
+    { 
+        id: "starsports2", 
+        name: "Star Sports 2 HD (Local)", 
+        url: "http://10.99.99.99:8082/STAR.SPORTS2.HD/tracks-v1a1/mono.m3u8?token=92b017e7341faad5fd0c5cb3e9b1ccce3a372d10-062b567865df0985e6d9b2504833dec3-1781121722-1781110922", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "🏏" 
+    },
+    { 
+        id: "starsports3", 
+        name: "Star Sports 3 (Local)", 
+        url: "http://10.99.99.99:8082/STAR-SPORTS.3/tracks-v1a1/mono.m3u8?token=cc0f0661eab1a591800d92be9f2862773651026d-6568b9bf44165b0a334da00efc51d8af-1781121748-1781110948", 
+        category: "sports", 
+        quality: "SD", 
+        logo: "⚽" 
+    },
+    { 
+        id: "gtv", 
+        name: "GTV HD (Local)", 
+        url: "http://172.16.29.2:8090/hls/gazitvhd.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "📺" 
+    },
+    { 
+        id: "somoy", 
+        name: "Somoy TV (Local)", 
+        url: "http://172.16.29.2:8090/hls/somoytv.m3u8", 
+        category: "news", 
+        quality: "SD", 
+        logo: "📰" 
+    },
+    { 
+        id: "atnbangla", 
+        name: "ATN Bangla HD (Local)", 
+        url: "http://10.99.99.99:8082/ATN.BANGLA.HD/tracks-v1a1/mono.m3u8?token=30c2fb508a19d00cef9f0c7223fa80f2a167af4d-ab7c636effc30bce2e83d128ed28941c-1781121271-1781110471", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "📺" 
+    },
+    { 
+        id: "independent", 
+        name: "Independent TV (Local)", 
+        url: "http://10.99.99.99:8082/INDEPENDENT.TV/tracks-v1a1/mono.m3u8?token=9e6da90dc8976af1709c55b557be0c306918722c-b8b536f2ecb19bda250b31894b3ab6af-1781121416-1781110616", 
+        category: "news", 
+        quality: "HD", 
+        logo: "📰" 
+    },
+
+    // --- YouTube Backups ---
     { 
         id: "somoy_yt", 
         name: "Somoy TV (YouTube)", 
