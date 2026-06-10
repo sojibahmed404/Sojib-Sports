@@ -394,6 +394,7 @@ body {
 }
 .ch-quality.hd { color: var(--accent-base); }
 .ch-quality.sd { color: var(--text-muted); }
+.ch-quality.local-text { color: #f59e0b; }
 
 .fav-btn-star {
     font-size: 13px;
@@ -857,6 +858,16 @@ body {
     color: var(--text-muted);
     border: 1px solid var(--border-subtle);
 }
+.card-badge.local-badge {
+    background: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+.card-badge.global-badge {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
 .card-name {
     font-size: 16px;
     font-weight: 600;
@@ -1212,4 +1223,40 @@ body {
 .modal-action-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 20px rgba(255, 77, 106, 0.4);
+}
+
+/* ========== Network Information Banner ========== */
+.network-info-banner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(245, 158, 11, 0.05);
+    border: 1px solid rgba(245, 158, 11, 0.15);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    margin: 0 auto 32px;
+    max-width: 960px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-primary);
+    animation: fadeInUp 0.5s ease;
+}
+.network-info-banner .nib-icon {
+    font-size: 20px;
+    color: #f59e0b;
+    flex-shrink: 0;
+}
+.network-info-banner strong {
+    color: #f59e0b;
+}
+
+@media (max-width: 640px) {
+    .network-info-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 14px 16px;
+        margin-bottom: 24px;
+        font-size: 12.5px;
+    }
 }

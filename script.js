@@ -185,7 +185,8 @@ const channels = [
         url: "http://172.16.29.2:8090/hls/tsportshd.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "⚽" 
+        logo: "⚽",
+        isLocal: true
     },
     { 
         id: "ptvsports", 
@@ -193,7 +194,8 @@ const channels = [
         url: "http://10.99.99.99:8082/PTV-SPORTS-HD/tracks-v1a1/mono.m3u8?token=f76b92709d51803cdf1d7d4fc663f3c1dab8dcaa-ff92cc862d458b4b124afe2887cfe34d-1781121462-1781110662", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏" 
+        logo: "🏏",
+        isLocal: true
     },
     { 
         id: "asports", 
@@ -201,7 +203,8 @@ const channels = [
         url: "http://10.99.99.99:8082/A.SPORTS.HD/tracks-v1a1/mono.m3u8?token=1fc198421320e78f938a760162f4e2ed0cb60ce-194b2c0ebe8e327b2fa81b2632343df6-1781121503-1781110703", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏" 
+        logo: "🏏",
+        isLocal: true
     },
     { 
         id: "starsports1", 
@@ -209,7 +212,8 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR.SPORTS1.HD/tracks-v1a1/mono.m3u8?token=584c34f8a8c5cc19ea4d71ec4c197dea3f390bcd-a3bfbf778837d5fe510761d2abc49e2f-1781121527-1781110727", 
         category: "sports", 
         quality: "HD", 
-        logo: "⚽" 
+        logo: "⚽",
+        isLocal: true
     },
     { 
         id: "starsports_sel1", 
@@ -217,7 +221,8 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR.SPORTS-SEL1.HD/tracks-v1a1/mono.m3u8?token=2ffbde34d181225ce3397392dfdd02e7f82be7c9-b18f43a4c8247927c4185846fcee8711-1781121674-1781110874", 
         category: "sports", 
         quality: "HD", 
-        logo: "🎾" 
+        logo: "🎾",
+        isLocal: true
     },
     { 
         id: "starsports2", 
@@ -225,7 +230,8 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR.SPORTS2.HD/tracks-v1a1/mono.m3u8?token=92b017e7341faad5fd0c5cb3e9b1ccce3a372d10-062b567865df0985e6d9b2504833dec3-1781121722-1781110922", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏" 
+        logo: "🏏",
+        isLocal: true
     },
     { 
         id: "starsports3", 
@@ -233,7 +239,8 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR-SPORTS.3/tracks-v1a1/mono.m3u8?token=cc0f0661eab1a591800d92be9f2862773651026d-6568b9bf44165b0a334da00efc51d8af-1781121748-1781110948", 
         category: "sports", 
         quality: "SD", 
-        logo: "⚽" 
+        logo: "⚽",
+        isLocal: true
     },
     { 
         id: "gtv", 
@@ -241,7 +248,8 @@ const channels = [
         url: "http://172.16.29.2:8090/hls/gazitvhd.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "📺",
+        isLocal: true
     },
     { 
         id: "somoy", 
@@ -249,7 +257,8 @@ const channels = [
         url: "http://172.16.29.2:8090/hls/somoytv.m3u8", 
         category: "news", 
         quality: "SD", 
-        logo: "📰" 
+        logo: "📰",
+        isLocal: true
     },
     { 
         id: "atnbangla", 
@@ -257,7 +266,8 @@ const channels = [
         url: "http://10.99.99.99:8082/ATN.BANGLA.HD/tracks-v1a1/mono.m3u8?token=30c2fb508a19d00cef9f0c7223fa80f2a167af4d-ab7c636effc30bce2e83d128ed28941c-1781121271-1781110471", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "📺",
+        isLocal: true
     },
     { 
         id: "independent", 
@@ -265,7 +275,8 @@ const channels = [
         url: "http://10.99.99.99:8082/INDEPENDENT.TV/tracks-v1a1/mono.m3u8?token=9e6da90dc8976af1709c55b557be0c306918722c-b8b536f2ecb19bda250b31894b3ab6af-1781121416-1781110616", 
         category: "news", 
         quality: "HD", 
-        logo: "📰" 
+        logo: "📰",
+        isLocal: true
     },
 
     // --- YouTube Backups ---
@@ -1052,7 +1063,7 @@ function renderSidebarNav() {
                     <div class="ch-icon ${cat.class}" onclick="playChannel('${ch.id}')">${ch.logo}</div>
                     <div class="ch-info" onclick="playChannel('${ch.id}')">
                         <div class="ch-name">${ch.name}</div>
-                        <div class="ch-quality ${ch.quality.toLowerCase()}">${ch.quality} Stream</div>
+                        <div class="ch-quality ${ch.isLocal ? 'local-text' : ch.quality.toLowerCase()}">${ch.isLocal ? '🏠 Local (ISP Only)' : `🌐 Global • ${ch.quality}`}</div>
                     </div>
                     <span class="fav-btn-star ${isFav ? 'starred' : ''}" onclick="toggleFavorite(event, '${ch.id}')">★</span>
                     <div class="live-dot" onclick="playChannel('${ch.id}')"></div>
@@ -1095,7 +1106,10 @@ function renderChannelGrid(filteredChannels) {
         card.innerHTML = `
             <div class="card-top">
                 <div class="card-icon ${iconClass}">${ch.logo}</div>
-                <div class="card-badge ${ch.quality.toLowerCase()}">${ch.quality}</div>
+                <div class="badge-group" style="display: flex; gap: 6px;">
+                    <div class="card-badge ${ch.isLocal ? 'local-badge' : 'global-badge'}">${ch.isLocal ? '🏠 Local' : '🌐 Global'}</div>
+                    <div class="card-badge ${ch.quality.toLowerCase()}">${ch.quality}</div>
+                </div>
             </div>
             <div class="card-name">${ch.name}</div>
             <div class="card-category">${ch.category.toUpperCase()} • LIVE</div>
