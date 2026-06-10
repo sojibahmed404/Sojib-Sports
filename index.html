@@ -157,6 +157,45 @@
     </div>
     <div class="drawer-overlay" id="drawer-overlay" onclick="toggleScheduleDrawer(false)"></div>
 
+    <!-- ===== Mixed Content Alert Modal ===== -->
+    <div class="modal-overlay" id="mixed-content-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>⚠️ লোকাল চ্যানেল প্লে হচ্ছে না?</h3>
+                <button class="modal-close-btn" onclick="toggleMixedContentModal(false)">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Vercel (HTTPS) সিকিউরিটি পলিসির কারণে ব্রাউজার আপনার লোকাল <strong>HTTP</strong> চ্যানেলগুলো ব্লক করছে। এটি ২ ক্লিকে ঠিক করতে নিচের ধাপগুলো অনুসরণ করুন:</p>
+                <div class="instructions-steps">
+                    <div class="step-item">
+                        <span class="step-num">১</span>
+                        <div class="step-text">
+                            <strong>১. সেটিংস ওপেন করুন:</strong><br>
+                            ব্রাউজারের ইউআরএল বারের বামে থাকা <strong>Lock (🔒) বা সেটিংস আইকন</strong>-এ ক্লিক করুন।
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">২</span>
+                        <div class="step-text">
+                            <strong>২. অনুমতি দিন:</strong><br>
+                            সেখান থেকে <strong>Site Settings</strong>-এ যান এবং <strong>Insecure content</strong> অপশনটি <strong>Allow</strong> করে দিন।
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">৩</span>
+                        <div class="step-text">
+                            <strong>৩. রিলোড করুন:</strong><br>
+                            পেজটি একবার <strong>রিফ্রেশ (Reload)</strong> করুন।
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-action-btn" onclick="toggleMixedContentModal(false)">ঠিক আছে, আমি বুঝেছি</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

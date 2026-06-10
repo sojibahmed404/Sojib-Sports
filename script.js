@@ -795,6 +795,7 @@ const drawerOverlay = document.getElementById('drawer-overlay');
 const channelGrid = document.getElementById('channel-grid');
 const video = document.getElementById('video');
 const youtubePlayer = document.getElementById('youtube-player');
+const mixedContentModal = document.getElementById('mixed-content-modal');
 const videoWrapper = document.getElementById('video-wrapper');
 const playerOverlay = document.getElementById('player-overlay');
 const playerInfo = document.getElementById('player-info');
@@ -1130,16 +1131,21 @@ function playChannel(id, isAutoplay = false) {
             
             hls.on(Hls.Events.ERROR, function (event, data) {
                 if (data.fatal) {
-                    switch(data.type) {
-                    case Hls.ErrorTypes.NETWORK_ERROR:
-                        hls.startLoad();
-                        break;
-                    case Hls.ErrorTypes.MEDIA_ERROR:
-                        hls.recoverMediaError();
-                        break;
-                    default:
-                        hls.destroy();
-                        break;
+                    if (window.location.protocol === 'https:') {
+                        // Mixed content check
+                        toggleMixedContentModal(true);
+                    } else {
+                        switch(data.type) {
+                        case Hls.ErrorTypes.NETWORK_ERROR:
+                            hls.startLoad();
+                            break;
+                        case Hls.ErrorTypes.MEDIA_ERROR:
+                            hls.recoverMediaError();
+                            break;
+                        default:
+                            hls.destroy();
+                            break;
+                        }
                     }
                 }
             });
@@ -1308,6 +1314,15 @@ function togglePiP() {
         document.exitPictureInPicture();
     } else if (document.pictureInPictureEnabled && video.readyState >= 1) {
         video.requestPictureInPicture();
+    }
+}
+
+// Toggle Mixed Content helper modal
+function toggleMixedContentModal(show) {
+    if (show) {
+        mixedContentModal.classList.add('visible');
+    } else {
+        mixedContentModal.classList.remove('visible');
     }
 }
 
