@@ -1,9 +1,17 @@
 // Channel Data with categories and metadata
 const channels = [
     { 
+        id: "btv", 
+        name: "BTV National", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "🇧🇩" 
+    },
+    { 
         id: "tsports", 
         name: "T Sports HD", 
-        url: "http://172.16.29.2:8090/hls/tsportshd.m3u8", 
+        url: "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1779283784&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=3b4c5a2cfa872fa7f91ffbfb4aa0f658", 
         category: "sports", 
         quality: "HD", 
         logo: "⚽" 
@@ -11,86 +19,166 @@ const channels = [
     { 
         id: "ptvsports", 
         name: "PTV Sports HD", 
-        url: "http://10.99.99.99:8082/PTV-SPORTS-HD/tracks-v1a1/mono.m3u8?token=f76b92709d51803cdf1d7d4fc663f3c1dab8dcaa-ff92cc862d458b4b124afe2887cfe34d-1781121462-1781110662", 
+        url: "https://tvsen5.aynaott.com/PtvSports/index.m3u8", 
         category: "sports", 
         quality: "HD", 
         logo: "🏏" 
     },
     { 
-        id: "asports", 
-        name: "A Sports HD", 
-        url: "http://10.99.99.99:8082/A.SPORTS.HD/tracks-v1a1/mono.m3u8?token=1fc198421320e78f938a760162f4e2ed0cb60ce-194b2c0ebe8e327b2fa81b2632343df6-1781121503-1781110703", 
-        category: "sports", 
-        quality: "HD", 
-        logo: "🏏" 
-    },
-    { 
-        id: "starsports1", 
-        name: "Star Sports 1 HD", 
-        url: "http://10.99.99.99:8082/STAR.SPORTS1.HD/tracks-v1a1/mono.m3u8?token=584c34f8a8c5cc19ea4d71ec4c197dea3f390bcd-a3bfbf778837d5fe510761d2abc49e2f-1781121527-1781110727", 
+        id: "tycsports", 
+        name: "TyC Sports HD", 
+        url: "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8", 
         category: "sports", 
         quality: "HD", 
         logo: "⚽" 
     },
     { 
-        id: "starsports_sel1", 
-        name: "Star Sports Select 1", 
-        url: "http://10.99.99.99:8082/STAR.SPORTS-SEL1.HD/tracks-v1a1/mono.m3u8?token=2ffbde34d181225ce3397392dfdd02e7f82be7c9-b18f43a4c8247927c4185846fcee8711-1781121674-1781110874", 
+        id: "fifaplus", 
+        name: "FIFA Plus HD", 
+        url: "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "🎾" 
-    },
-    { 
-        id: "starsports2", 
-        name: "Star Sports 2 HD", 
-        url: "http://10.99.99.99:8082/STAR.SPORTS2.HD/tracks-v1a1/mono.m3u8?token=92b017e7341faad5fd0c5cb3e9b1ccce3a372d10-062b567865df0985e6d9b2504833dec3-1781121722-1781110922", 
-        category: "sports", 
-        quality: "HD", 
-        logo: "🏏" 
-    },
-    { 
-        id: "starsports3", 
-        name: "Star Sports 3", 
-        url: "http://10.99.99.99:8082/STAR-SPORTS.3/tracks-v1a1/mono.m3u8?token=cc0f0661eab1a591800d92be9f2862773651026d-6568b9bf44165b0a334da00efc51d8af-1781121748-1781110948", 
-        category: "sports", 
-        quality: "SD", 
-        logo: "⚽" 
+        logo: "🏆" 
     },
     { 
         id: "gtv", 
         name: "GTV HD", 
-        url: "http://172.16.29.2:8090/hls/gazitvhd.m3u8", 
+        url: "https://itpolly.iptv.digijadoo.net/live/gazi_tv/chunks.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "📺" 
+    },
+    { 
+        id: "starjalsha", 
+        name: "Star Jalsha HD", 
+        url: "https://itpolly.iptv.digijadoo.net/live/star_jalsha_hd/playlist.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "🎭" 
+    },
+    { 
+        id: "zeecinema", 
+        name: "Zee Cinema HD", 
+        url: "https://itpolly.iptv.digijadoo.net/live/zee_cinema/chunks.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "🎬" 
+    },
+    { 
+        id: "colorsbangla", 
+        name: "Colors Bangla HD", 
+        url: "https://itpolly.iptv.digijadoo.net/live/colors_bangla_hd/playlist.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "🎨" 
+    },
+    { 
+        id: "atnbangla", 
+        name: "ATN Bangla HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "📺" 
+    },
+    { 
+        id: "channeli", 
+        name: "Channel i HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "📡" 
+    },
+    { 
+        id: "deeptotv", 
+        name: "Deepto TV HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "📺" 
+    },
+    { 
+        id: "channel24", 
+        name: "Channel 24 HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
         logo: "📺" 
     },
     { 
         id: "somoy", 
-        name: "Somoy TV", 
-        url: "http://172.16.29.2:8090/hls/somoytv.m3u8", 
+        name: "Somoy TV HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8", 
         category: "news", 
-        quality: "SD", 
+        quality: "HD", 
         logo: "📰" 
     },
     { 
-        id: "atnbangla", 
-        name: "ATN Bangla HD", 
-        url: "http://10.99.99.99:8082/ATN.BANGLA.HD/tracks-v1a1/mono.m3u8?token=30c2fb508a19d00cef9f0c7223fa80f2a167af4d-ab7c636effc30bce2e83d128ed28941c-1781121271-1781110471", 
+        id: "jamuna", 
+        name: "Jamuna TV HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8", 
+        category: "news", 
+        quality: "HD", 
+        logo: "📰" 
+    },
+    { 
+        id: "independent", 
+        name: "Independent TV HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8", 
+        category: "news", 
+        quality: "HD", 
+        logo: "📰" 
+    },
+    { 
+        id: "ekattor", 
+        name: "Ekattor TV HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8", 
+        category: "news", 
+        quality: "HD", 
+        logo: "📰" 
+    },
+    { 
+        id: "atnnews", 
+        name: "ATN News HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8", 
+        category: "news", 
+        quality: "HD", 
+        logo: "📰" 
+    },
+    { 
+        id: "banglavision", 
+        name: "BanglaVision HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
         logo: "📺" 
     },
     { 
-        id: "independent", 
-        name: "Independent TV HD", 
-        url: "http://10.99.99.99:8082/INDEPENDENT.TV/tracks-v1a1/mono.m3u8?token=9e6da90dc8976af1709c55b557be0c306918722c-b8b536f2ecb19bda250b31894b3ab6af-1781121416-1781110616", 
-        category: "news", 
+        id: "ntv", 
+        name: "NTV HD", 
+        url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8", 
+        category: "tv", 
         quality: "HD", 
-        logo: "📰" 
+        logo: "📺" 
+    },
+    { 
+        id: "quran", 
+        name: "Saudi Quran Live", 
+        url: "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "🕋" 
+    },
+    { 
+        id: "sunnah", 
+        name: "Saudi Sunnah Live", 
+        url: "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8", 
+        category: "tv", 
+        quality: "HD", 
+        logo: "🕌" 
     },
     { 
         id: "somoy_yt", 
-        name: "Somoy TV (YouTube Live)", 
+        name: "Somoy TV (YouTube)", 
         url: "https://www.youtube.com/embed/live_stream?channel=UC751P3_F3D6S32p09L5R1iA", 
         category: "news", 
         quality: "HD", 
@@ -99,7 +187,7 @@ const channels = [
     },
     { 
         id: "jamuna_yt", 
-        name: "Jamuna TV (YouTube Live)", 
+        name: "Jamuna TV (YouTube)", 
         url: "https://www.youtube.com/embed/live_stream?channel=UCN6sm8iHiPd0cnoUardDAnw", 
         category: "news", 
         quality: "HD", 
@@ -108,7 +196,7 @@ const channels = [
     },
     { 
         id: "independent_yt", 
-        name: "Independent TV (YouTube Live)", 
+        name: "Independent (YouTube)", 
         url: "https://www.youtube.com/embed/live_stream?channel=UC7g3bU5z2Y3W57-y-N5K5yA", 
         category: "news", 
         quality: "HD", 
@@ -117,7 +205,7 @@ const channels = [
     },
     { 
         id: "channel24_yt", 
-        name: "Channel 24 (YouTube Live)", 
+        name: "Channel 24 (YouTube)", 
         url: "https://www.youtube.com/embed/live_stream?channel=UCHLqIOMPk20w-6cFgkA90jw", 
         category: "tv", 
         quality: "HD", 
@@ -126,7 +214,7 @@ const channels = [
     },
     { 
         id: "ekattor_yt", 
-        name: "Ekattor TV (YouTube Live)", 
+        name: "Ekattor TV (YouTube)", 
         url: "https://www.youtube.com/embed/live_stream?channel=UCuB48s1rE2f-N1Ww4p7l_Ig", 
         category: "news", 
         quality: "HD", 
@@ -134,6 +222,7 @@ const channels = [
         isYoutube: true
     }
 ];
+
 
 // FIFA World Cup schedule data list with official dates in local timezone (+06:00)
 const scheduleMatches = [
@@ -822,8 +911,8 @@ function initApp() {
     renderChannelGrid(channels);
     renderDrawerSchedule();
 
-    // Autoplay implementation: Load and play T Sports HD immediately on load
-    const defaultChannelId = "tsports";
+    // Autoplay implementation: Load and play BTV National immediately on load
+    const defaultChannelId = "btv";
     playChannel(defaultChannelId, true); // Pass true to enable autoplay logic
 }
 
@@ -1131,18 +1220,21 @@ function playChannel(id, isAutoplay = false) {
             
             hls.on(Hls.Events.ERROR, function (event, data) {
                 if (data.fatal) {
-                    if (window.location.protocol === 'https:') {
-                        // Mixed content check
+                    if (window.location.protocol === 'https:' && channel.url.startsWith('http://')) {
+                        // Mixed content check (only for local HTTP streams loaded on HTTPS page)
                         toggleMixedContentModal(true);
                     } else {
                         switch(data.type) {
                         case Hls.ErrorTypes.NETWORK_ERROR:
+                            console.log("Network error fatal. Retrying...", data);
                             hls.startLoad();
                             break;
                         case Hls.ErrorTypes.MEDIA_ERROR:
+                            console.log("Media error fatal. Recovering...", data);
                             hls.recoverMediaError();
                             break;
                         default:
+                            console.error("Fatal error loading stream. Destroying hls.", data);
                             hls.destroy();
                             break;
                         }
