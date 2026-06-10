@@ -510,6 +510,26 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
+.header-logo {
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+.logo-icon-small {
+    font-size: 18px;
+}
+.logo-text-small {
+    font-family: 'Outfit', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+.logo-text-small span {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 /* ========== Live Score / Banner Ticker ========== */
 .live-ticker {
@@ -1050,6 +1070,8 @@ body {
     .menu-toggle { display: flex; }
     .content-area { padding: 20px; }
     .live-ticker { display: none; }
+    .header-logo { display: flex; }
+    .page-title { display: none; }
 }
 
 @media (max-width: 640px) {
