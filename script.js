@@ -7,7 +7,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "🇧🇩",
+        logo: "https://upload.wikimedia.org/wikipedia/en/0/02/Bangladesh_Television_Logo.svg",
         isWorldCup: true
     },
     { 
@@ -16,7 +16,7 @@ const channels = [
         url: "https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "⚽",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/T_Sports_logo.svg",
         isWorldCup: true
     },
     { 
@@ -25,7 +25,7 @@ const channels = [
         url: "https://tvsen5.aynaott.com/PtvSports/index.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏",
+        logo: "https://upload.wikimedia.org/wikipedia/en/e/e4/PTV_Sports.png",
         isWorldCup: true
     },
     { 
@@ -34,7 +34,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/asports/index.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏",
+        logo: "https://upload.wikimedia.org/wikipedia/en/1/12/A_Sports_Pakistan_logo.png",
         isWorldCup: true
     },
     { 
@@ -43,7 +43,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/CricketGold/index.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏",
+        logo: "https://resources.cricket-australia.pulselive.com/cricket-australia/photo/2025/07/25/836eddae-4329-4542-ad17-dcd37e9d951a/Cricket-Gold-1920x1080_noBG.png",
         isWorldCup: true
     },
     {
@@ -52,7 +52,7 @@ const channels = [
         url: "https://a62dad94.wurl.com/ppc-sysdata_s_p_a_fifa_6-UTC-wfo-0-8581ba69/playlist_3000k_20260611T124901_204389.ts",
         category: "sports",
         quality: "HD",
-        logo: "🏆",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/a/aa/FIFA_logo_without_slogan.svg",
         isWorldCup: true
     },
     {
@@ -61,7 +61,7 @@ const channels = [
         url: "https://stream.ottplus.bd/live/euro_sports_hd_abr/live/euro_sports_hd/chunks.m3u8",
         category: "sports",
         quality: "HD",
-        logo: "⚽",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Eurosport_logo_2015.svg",
         isWorldCup: true
     },
     {
@@ -70,7 +70,7 @@ const channels = [
         url: "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8",
         category: "sports",
         quality: "HD",
-        logo: "⚽",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/c/c5/BeIN_Sports_logo.svg",
         isWorldCup: true
     },
     {
@@ -79,7 +79,7 @@ const channels = [
         url: "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8",
         category: "sports",
         quality: "HD",
-        logo: "🏏",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/a/ae/KTV_Sports.svg",
         isWorldCup: true
     },
     { 
@@ -88,7 +88,7 @@ const channels = [
         url: "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "⚽",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/5/5a/TyC_Sports_Logo.svg",
         isWorldCup: true
     },
     { 
@@ -97,7 +97,7 @@ const channels = [
         url: "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏆",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/f/f7/FIFA%2B_logo.svg",
         isWorldCup: true
     },
     { 
@@ -106,7 +106,7 @@ const channels = [
         url: "https://itpolly.iptv.digijadoo.net/live/gazi_tv/chunks.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺",
+        logo: "https://upload.wikimedia.org/wikipedia/en/f/f1/Logo_of_GTV_%28Bangladesh%29.svg",
         isWorldCup: true
     },
     { 
@@ -115,7 +115,7 @@ const channels = [
         url: "https://itpolly.iptv.digijadoo.net/live/star_jalsha_hd/playlist.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "🎭" 
+        logo: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png"
     },
     { 
         id: "zeecinema", 
@@ -123,7 +123,7 @@ const channels = [
         url: "https://itpolly.iptv.digijadoo.net/live/zee_cinema/chunks.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "🎬" 
+        logo: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Zee_Entertainment_2025.svg"
     },
     { 
         id: "colorsbangla", 
@@ -131,7 +131,7 @@ const channels = [
         url: "https://itpolly.iptv.digijadoo.net/live/colors_bangla_hd/playlist.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "🎨" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/7/7f/Colors_Bangla_logo.svg"
     },
     { 
         id: "atnbangla", 
@@ -139,7 +139,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/ATN_Bangla_Logo_without_slogan.svg"
     },
     { 
         id: "channeli", 
@@ -147,7 +147,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📡" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/8/88/Channel-i.svg"
     },
     { 
         id: "deeptotv", 
@@ -155,7 +155,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/0/00/Logo_of_Deepto_TV.svg"
     },
     { 
         id: "channel24", 
@@ -163,7 +163,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/9/9b/Logo_of_Channel_24_%28Bangladesh%29.svg"
     },
     { 
         id: "somoy", 
@@ -171,7 +171,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
-        logo: "📰" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/c/c4/SOMOY_TV_Logo.svg"
     },
     { 
         id: "jamuna", 
@@ -179,7 +179,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
-        logo: "📰" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/a/a6/Jamuna_TV_Logo.svg"
     },
     { 
         id: "independent", 
@@ -187,7 +187,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
-        logo: "📰" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/c/c1/Independent_Television_Logo.svg"
     },
     { 
         id: "ekattor", 
@@ -195,7 +195,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
-        logo: "📰" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/5/57/Ekattor_TV_logo.svg"
     },
     { 
         id: "atnnews", 
@@ -203,7 +203,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
-        logo: "📰" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/1/18/ATN_News_Logo_without_slogan.svg"
     },
     { 
         id: "banglavision", 
@@ -211,7 +211,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Banglavision.svg"
     },
     { 
         id: "ntv", 
@@ -219,7 +219,7 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "https://upload.wikimedia.org/wikipedia/en/e/ef/NTV_%28Bangladesh%29_logo.svg"
     },
     { 
         id: "quran", 
@@ -227,7 +227,7 @@ const channels = [
         url: "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "🕋" 
+        logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Quran_TV_%28Saudi_Arabia%29_logo.svg"
     },
     { 
         id: "sunnah", 
@@ -235,7 +235,7 @@ const channels = [
         url: "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "🕌" 
+        logo: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Saudi_Sunnah_TV_Logo.svg"
     },
     {
         id: "rajdhani",
@@ -243,7 +243,7 @@ const channels = [
         url: "https://stream.shariarsuvo.com/hls6/rajdhaniweb.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/4/47/RajdhaniTV.svg"
     },
     {
         id: "rtv",
@@ -251,7 +251,7 @@ const channels = [
         url: "https://tvsen5.aynaott.com/RtvHD/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/6/64/RTV_Logo.svg"
     },
     {
         id: "etv",
@@ -259,7 +259,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/etv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/d/d9/Ekushey_Television_Logo.svg"
     },
     {
         id: "channel9",
@@ -267,7 +267,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/channel9/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Channel9_bd.svg"
     },
     {
         id: "deshtv",
@@ -275,7 +275,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/deshtv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_of_Desh_TV.svg"
     },
     {
         id: "boishakhitv",
@@ -283,7 +283,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/boishakhitv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/c/c7/Boishakhi_TV_logo.svg"
     },
     {
         id: "satv",
@@ -291,7 +291,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/satv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/b/b0/SATV_logo.svg"
     },
     {
         id: "mytv",
@@ -299,7 +299,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/mytv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/8/8b/Logo_of_My_TV_%28Bangladesh%29.svg"
     },
     {
         id: "bijoytv",
@@ -307,7 +307,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/bijoytv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/Logo_of_Bijoy_TV.svg"
     },
     {
         id: "massranga",
@@ -315,7 +315,7 @@ const channels = [
         url: "https://tvsen5.aynaott.com/maasrangatv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/3/39/Maasranga_Television_Logo.jpg"
     },
     {
         id: "asiantv",
@@ -323,7 +323,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/asiantv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/1/18/Asian_TV_logo.svg"
     },
     {
         id: "banglatv",
@@ -331,7 +331,7 @@ const channels = [
         url: "https://tvsen6.aynaott.com/banglatv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/2/2a/Bangla_TV_logo.svg"
     },
     {
         id: "mohonatv",
@@ -339,9 +339,8 @@ const channels = [
         url: "https://tvsen6.aynaott.com/mohonatv/index.m3u8",
         category: "tv",
         quality: "HD",
-        logo: "📺"
+        logo: "https://upload.wikimedia.org/wikipedia/en/9/94/Mohona_tv_Logo.svg"
     },
-
     // --- Local Network Channels (Work only on user's ISP network) ---
     { 
         id: "starsports1", 
@@ -349,7 +348,7 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR.SPORTS1.HD/tracks-v1a1/mono.m3u8?token=584c34f8a8c5cc19ea4d71ec4c197dea3f390bcd-a3bfbf778837d5fe510761d2abc49e2f-1781121527-1781110727", 
         category: "sports", 
         quality: "HD", 
-        logo: "⚽",
+        logo: "https://upload.wikimedia.org/wikipedia/en/2/22/Star_Sports_Network_logo.png",
         isLocal: true,
         isWorldCup: true
     },
@@ -359,7 +358,7 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR.SPORTS-SEL1.HD/tracks-v1a1/mono.m3u8?token=2ffbde34d181225ce3397392dfdd02e7f82be7c9-b18f43a4c8247927c4185846fcee8711-1781121674-1781110874", 
         category: "sports", 
         quality: "HD", 
-        logo: "🎾",
+        logo: "https://upload.wikimedia.org/wikipedia/en/2/22/Star_Sports_Network_logo.png",
         isLocal: true,
         isWorldCup: true
     },
@@ -369,7 +368,7 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR.SPORTS2.HD/tracks-v1a1/mono.m3u8?token=92b017e7341faad5fd0c5cb3e9b1ccce3a372d10-062b567865df0985e6d9b2504833dec3-1781121722-1781110922", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏",
+        logo: "https://upload.wikimedia.org/wikipedia/en/2/22/Star_Sports_Network_logo.png",
         isLocal: true,
         isWorldCup: true
     },
@@ -379,7 +378,7 @@ const channels = [
         url: "http://10.99.99.99:8082/STAR-SPORTS.3/tracks-v1a1/mono.m3u8?token=cc0f0661eab1a591800d92be9f2862773651026d-6568b9bf44165b0a334da00efc51d8af-1781121748-1781110948", 
         category: "sports", 
         quality: "SD", 
-        logo: "⚽",
+        logo: "https://upload.wikimedia.org/wikipedia/en/2/22/Star_Sports_Network_logo.png",
         isLocal: true,
         isWorldCup: true
     }
@@ -1089,9 +1088,15 @@ function renderChannelGrid(filteredChannels) {
         if (ch.category === 'sports') iconClass = 'sports-icon';
         if (ch.category === 'news') iconClass = 'news-icon';
         
+        let logoContent = ch.logo;
+        if (ch.logo && (ch.logo.startsWith('http://') || ch.logo.startsWith('https://'))) {
+            const initials = ch.name.split(' ').map(w => w[0]).join('').substring(0, 3).toUpperCase();
+            logoContent = `<img src="${ch.logo}" alt="${ch.name}" class="channel-logo-img" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=&quot;font-size:14px;font-weight:700;letter-spacing:1px;color:#fff;&quot;>${initials}</span>';">`;
+        }
+        
         card.innerHTML = `
             <div class="card-top">
-                <div class="card-icon ${iconClass}">${ch.logo}</div>
+                <div class="card-icon ${iconClass}">${logoContent}</div>
                 <div class="badge-group" style="display: flex; gap: 6px;">
                     <div class="card-badge ${ch.isLocal ? 'local-badge' : 'global-badge'}">${ch.isLocal ? '🏠 Local' : '🌐 Global'}</div>
                     <div class="card-badge ${ch.quality.toLowerCase()}">${ch.quality}</div>

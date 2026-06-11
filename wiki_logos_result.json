@@ -1,0 +1,202 @@
+{
+  "BTV": {
+    "name": "BTV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Bangladesh_Television_Logo.svg/320px-Bangladesh_Television_Logo.svg.png",
+    "status": "OK"
+  },
+  "T Sports": {
+    "name": "T Sports",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/320px-T_Sports_logo.svg.png",
+    "status": "OK"
+  },
+  "PTV Sports": {
+    "name": "PTV Sports",
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e4/PTV_Sports.png",
+    "status": "OK"
+  },
+  "A Sports": {
+    "name": "A Sports",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 404)"
+  },
+  "GTV": {
+    "name": "GTV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Logo_of_GTV_%28Bangladesh%29.svg/320px-Logo_of_GTV_%28Bangladesh%29.svg.png",
+    "status": "OK"
+  },
+  "Star Jalsha": {
+    "name": "Star Jalsha",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png",
+    "status": "OK"
+  },
+  "Zee Cinema": {
+    "name": "Zee Cinema",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Zee_Entertainment_2025.svg/320px-Zee_Entertainment_2025.svg.png",
+    "status": "OK"
+  },
+  "Colors Bangla": {
+    "name": "Colors Bangla",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Colors_Bangla_logo.svg/320px-Colors_Bangla_logo.svg.png",
+    "status": "OK"
+  },
+  "ATN Bangla": {
+    "name": "ATN Bangla",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/ATN_Bangla_Logo_without_slogan.svg/320px-ATN_Bangla_Logo_without_slogan.svg.png",
+    "status": "OK"
+  },
+  "Channel i": {
+    "name": "Channel i",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Channel-i.svg/320px-Channel-i.svg.png",
+    "status": "OK"
+  },
+  "Deepto TV": {
+    "name": "Deepto TV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Logo_of_Deepto_TV.svg/320px-Logo_of_Deepto_TV.svg.png",
+    "status": "OK"
+  },
+  "Channel 24": {
+    "name": "Channel 24",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Logo_of_Channel_24_%28Bangladesh%29.svg/320px-Logo_of_Channel_24_%28Bangladesh%29.svg.png",
+    "status": "OK"
+  },
+  "Somoy TV": {
+    "name": "Somoy TV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/SOMOY_TV_Logo.svg/320px-SOMOY_TV_Logo.svg.png",
+    "status": "OK"
+  },
+  "Jamuna TV": {
+    "name": "Jamuna TV",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Jamuna_Television_Building.jpg",
+    "status": "OK"
+  },
+  "Independent TV": {
+    "name": "Independent TV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Independent_Television_Logo.svg/320px-Independent_Television_Logo.svg.png",
+    "status": "OK"
+  },
+  "Ekattor TV": {
+    "name": "Ekattor TV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Ekattor_TV_logo.svg/320px-Ekattor_TV_logo.svg.png",
+    "status": "OK"
+  },
+  "ATN News": {
+    "name": "ATN News",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/ATN_News_Logo_without_slogan.svg/320px-ATN_News_Logo_without_slogan.svg.png",
+    "status": "OK"
+  },
+  "BanglaVision": {
+    "name": "BanglaVision",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Banglavision.svg/320px-Banglavision.svg.png",
+    "status": "OK"
+  },
+  "NTV": {
+    "name": "NTV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/NTV_%28Bangladesh%29_logo.svg/320px-NTV_%28Bangladesh%29_logo.svg.png",
+    "status": "OK"
+  },
+  "RTV": {
+    "name": "RTV",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 404)"
+  },
+  "ETV": {
+    "name": "ETV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Ekushey_Television_Logo.svg/320px-Ekushey_Television_Logo.svg.png",
+    "status": "OK"
+  },
+  "Channel 9": {
+    "name": "Channel 9",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Channel9_bd.svg/320px-Channel9_bd.svg.png",
+    "status": "OK"
+  },
+  "Desh TV": {
+    "name": "Desh TV",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_of_Desh_TV.svg/320px-Logo_of_Desh_TV.svg.png",
+    "status": "OK"
+  },
+  "Boishakhi TV": {
+    "name": "Boishakhi TV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Boishakhi_TV_logo.svg/320px-Boishakhi_TV_logo.svg.png",
+    "status": "OK"
+  },
+  "SATV": {
+    "name": "SATV",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 200)"
+  },
+  "MyTV": {
+    "name": "MyTV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Logo_of_My_TV_%28Bangladesh%29.svg/320px-Logo_of_My_TV_%28Bangladesh%29.svg.png",
+    "status": "OK"
+  },
+  "Bijoy TV": {
+    "name": "Bijoy TV",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Logo_of_Bijoy_TV.svg/320px-Logo_of_Bijoy_TV.svg.png",
+    "status": "OK"
+  },
+  "Maasranga TV": {
+    "name": "Maasranga TV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/39/Maasranga_Television_Logo.jpg",
+    "status": "OK"
+  },
+  "Asian TV": {
+    "name": "Asian TV",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 200)"
+  },
+  "Bangla TV": {
+    "name": "Bangla TV",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 404)"
+  },
+  "Mohona TV": {
+    "name": "Mohona TV",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Mohona_tv_Logo.svg/320px-Mohona_tv_Logo.svg.png",
+    "status": "OK"
+  },
+  "Star Sports 1": {
+    "name": "Star Sports 1",
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/22/Star_Sports_Network_logo.png",
+    "status": "OK"
+  },
+  "Star Sports 2": {
+    "name": "Star Sports 2",
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/22/Star_Sports_Network_logo.png",
+    "status": "OK"
+  },
+  "Star Sports 3": {
+    "name": "Star Sports 3",
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/22/Star_Sports_Network_logo.png",
+    "status": "OK"
+  },
+  "Star Sports Select 1": {
+    "name": "Star Sports Select 1",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 404)"
+  },
+  "KTV Sports": {
+    "name": "KTV Sports",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 404)"
+  },
+  "TyC Sports": {
+    "name": "TyC Sports",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 200)"
+  },
+  "FIFA+": {
+    "name": "FIFA+",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/FIFA_logo_without_slogan.svg/320px-FIFA_logo_without_slogan.svg.png",
+    "status": "OK"
+  },
+  "Eurosport": {
+    "name": "Eurosport",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Si%C3%A8ge_Eurosport_France_-_Issy-les-Moulineaux.jpg/320px-Si%C3%A8ge_Eurosport_France_-_Issy-les-Moulineaux.jpg",
+    "status": "OK"
+  },
+  "beIN Sports": {
+    "name": "beIN Sports",
+    "url": null,
+    "status": "NOT_FOUND (HTTP 301)"
+  }
+}
