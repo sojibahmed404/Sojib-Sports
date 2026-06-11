@@ -7,23 +7,80 @@ const channels = [
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "🇧🇩" 
+        logo: "🇧🇩",
+        isWorldCup: true
     },
     { 
-        id: "tsports_public", 
-        name: "T Sports HD (Global)", 
-        url: "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1779283784&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=3b4c5a2cfa872fa7f91ffbfb4aa0f658", 
+        id: "tsports", 
+        name: "T Sports HD", 
+        url: "https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "⚽" 
+        logo: "⚽",
+        isWorldCup: true
     },
     { 
-        id: "ptvsports_public", 
-        name: "PTV Sports HD (Global)", 
+        id: "ptvsports", 
+        name: "PTV Sports HD", 
         url: "https://tvsen5.aynaott.com/PtvSports/index.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏏" 
+        logo: "🏏",
+        isWorldCup: true
+    },
+    { 
+        id: "asports", 
+        name: "A Sports HD", 
+        url: "https://tvsen6.aynaott.com/asports/index.m3u8", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "🏏",
+        isWorldCup: true
+    },
+    { 
+        id: "cricket_gold", 
+        name: "Cricket Gold HD (Global)", 
+        url: "https://tvsen6.aynaott.com/CricketGold/index.m3u8", 
+        category: "sports", 
+        quality: "HD", 
+        logo: "🏏",
+        isWorldCup: true
+    },
+    {
+        id: "fifa_special_6",
+        name: "FIFA Special 6 (Live)",
+        url: "https://a62dad94.wurl.com/ppc-sysdata_s_p_a_fifa_6-UTC-wfo-0-8581ba69/playlist_3000k_20260611T124901_204389.ts",
+        category: "sports",
+        quality: "HD",
+        logo: "🏆",
+        isWorldCup: true
+    },
+    {
+        id: "eurosports",
+        name: "Euro Sports HD",
+        url: "https://stream.ottplus.bd/live/euro_sports_hd_abr/live/euro_sports_hd/chunks.m3u8",
+        category: "sports",
+        quality: "HD",
+        logo: "⚽",
+        isWorldCup: true
+    },
+    {
+        id: "beinsports_esp",
+        name: "beIN Sports En Español",
+        url: "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8",
+        category: "sports",
+        quality: "HD",
+        logo: "⚽",
+        isWorldCup: true
+    },
+    {
+        id: "ktvsports",
+        name: "KTV Sports HD",
+        url: "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8",
+        category: "sports",
+        quality: "HD",
+        logo: "🏏",
+        isWorldCup: true
     },
     { 
         id: "tycsports", 
@@ -31,7 +88,8 @@ const channels = [
         url: "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "⚽" 
+        logo: "⚽",
+        isWorldCup: true
     },
     { 
         id: "fifaplus", 
@@ -39,15 +97,17 @@ const channels = [
         url: "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8", 
         category: "sports", 
         quality: "HD", 
-        logo: "🏆" 
+        logo: "🏆",
+        isWorldCup: true
     },
     { 
-        id: "gtv_public", 
-        name: "GTV HD (Global)", 
+        id: "gtv", 
+        name: "GTV HD", 
         url: "https://itpolly.iptv.digijadoo.net/live/gazi_tv/chunks.m3u8", 
         category: "tv", 
         quality: "HD", 
-        logo: "📺" 
+        logo: "📺",
+        isWorldCup: true
     },
     { 
         id: "starjalsha", 
@@ -74,8 +134,8 @@ const channels = [
         logo: "🎨" 
     },
     { 
-        id: "atnbangla_public", 
-        name: "ATN Bangla HD (Global)", 
+        id: "atnbangla", 
+        name: "ATN Bangla HD", 
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8", 
         category: "tv", 
         quality: "HD", 
@@ -106,8 +166,8 @@ const channels = [
         logo: "📺" 
     },
     { 
-        id: "somoy_public", 
-        name: "Somoy TV HD (Global)", 
+        id: "somoy", 
+        name: "Somoy TV HD", 
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
@@ -122,8 +182,8 @@ const channels = [
         logo: "📰" 
     },
     { 
-        id: "independent_public", 
-        name: "Independent TV (Global)", 
+        id: "independent", 
+        name: "Independent TV HD", 
         url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8", 
         category: "news", 
         quality: "HD", 
@@ -177,35 +237,112 @@ const channels = [
         quality: "HD", 
         logo: "🕌" 
     },
+    {
+        id: "rajdhani",
+        name: "Rajdhani TV",
+        url: "https://stream.shariarsuvo.com/hls6/rajdhaniweb.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "rtv",
+        name: "RTV HD",
+        url: "https://tvsen5.aynaott.com/RtvHD/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "etv",
+        name: "ETV HD",
+        url: "https://tvsen6.aynaott.com/etv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "channel9",
+        name: "Channel 9 HD",
+        url: "https://tvsen6.aynaott.com/channel9/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "deshtv",
+        name: "Desh TV HD",
+        url: "https://tvsen6.aynaott.com/deshtv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "boishakhitv",
+        name: "Boishakhi TV HD",
+        url: "https://tvsen6.aynaott.com/boishakhitv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "satv",
+        name: "SATV HD",
+        url: "https://tvsen6.aynaott.com/satv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "mytv",
+        name: "MYTV HD",
+        url: "https://tvsen6.aynaott.com/mytv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "bijoytv",
+        name: "Bijoy TV HD",
+        url: "https://tvsen6.aynaott.com/bijoytv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "massranga",
+        name: "Maasranga TV HD",
+        url: "https://tvsen5.aynaott.com/maasrangatv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "asiantv",
+        name: "Asian TV HD",
+        url: "https://tvsen6.aynaott.com/asiantv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "banglatv",
+        name: "Bangla TV HD",
+        url: "https://tvsen6.aynaott.com/banglatv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
+    {
+        id: "mohonatv",
+        name: "Mohona TV HD",
+        url: "https://tvsen6.aynaott.com/mohonatv/index.m3u8",
+        category: "tv",
+        quality: "HD",
+        logo: "📺"
+    },
 
     // --- Local Network Channels (Work only on user's ISP network) ---
-    { 
-        id: "tsports", 
-        name: "T Sports HD (Local)", 
-        url: "http://172.16.29.2:8090/hls/tsportshd.m3u8", 
-        category: "sports", 
-        quality: "HD", 
-        logo: "⚽",
-        isLocal: true
-    },
-    { 
-        id: "ptvsports", 
-        name: "PTV Sports HD (Local)", 
-        url: "http://10.99.99.99:8082/PTV-SPORTS-HD/tracks-v1a1/mono.m3u8?token=f76b92709d51803cdf1d7d4fc663f3c1dab8dcaa-ff92cc862d458b4b124afe2887cfe34d-1781121462-1781110662", 
-        category: "sports", 
-        quality: "HD", 
-        logo: "🏏",
-        isLocal: true
-    },
-    { 
-        id: "asports", 
-        name: "A Sports HD (Local)", 
-        url: "http://10.99.99.99:8082/A.SPORTS.HD/tracks-v1a1/mono.m3u8?token=1fc198421320e78f938a760162f4e2ed0cb60ce-194b2c0ebe8e327b2fa81b2632343df6-1781121503-1781110703", 
-        category: "sports", 
-        quality: "HD", 
-        logo: "🏏",
-        isLocal: true
-    },
     { 
         id: "starsports1", 
         name: "Star Sports 1 HD (Local)", 
@@ -213,7 +350,8 @@ const channels = [
         category: "sports", 
         quality: "HD", 
         logo: "⚽",
-        isLocal: true
+        isLocal: true,
+        isWorldCup: true
     },
     { 
         id: "starsports_sel1", 
@@ -222,7 +360,8 @@ const channels = [
         category: "sports", 
         quality: "HD", 
         logo: "🎾",
-        isLocal: true
+        isLocal: true,
+        isWorldCup: true
     },
     { 
         id: "starsports2", 
@@ -231,7 +370,8 @@ const channels = [
         category: "sports", 
         quality: "HD", 
         logo: "🏏",
-        isLocal: true
+        isLocal: true,
+        isWorldCup: true
     },
     { 
         id: "starsports3", 
@@ -240,93 +380,10 @@ const channels = [
         category: "sports", 
         quality: "SD", 
         logo: "⚽",
-        isLocal: true
-    },
-    { 
-        id: "gtv", 
-        name: "GTV HD (Local)", 
-        url: "http://172.16.29.2:8090/hls/gazitvhd.m3u8", 
-        category: "tv", 
-        quality: "HD", 
-        logo: "📺",
-        isLocal: true
-    },
-    { 
-        id: "somoy", 
-        name: "Somoy TV (Local)", 
-        url: "http://172.16.29.2:8090/hls/somoytv.m3u8", 
-        category: "news", 
-        quality: "SD", 
-        logo: "📰",
-        isLocal: true
-    },
-    { 
-        id: "atnbangla", 
-        name: "ATN Bangla HD (Local)", 
-        url: "http://10.99.99.99:8082/ATN.BANGLA.HD/tracks-v1a1/mono.m3u8?token=30c2fb508a19d00cef9f0c7223fa80f2a167af4d-ab7c636effc30bce2e83d128ed28941c-1781121271-1781110471", 
-        category: "tv", 
-        quality: "HD", 
-        logo: "📺",
-        isLocal: true
-    },
-    { 
-        id: "independent", 
-        name: "Independent TV (Local)", 
-        url: "http://10.99.99.99:8082/INDEPENDENT.TV/tracks-v1a1/mono.m3u8?token=9e6da90dc8976af1709c55b557be0c306918722c-b8b536f2ecb19bda250b31894b3ab6af-1781121416-1781110616", 
-        category: "news", 
-        quality: "HD", 
-        logo: "📰",
-        isLocal: true
-    },
-
-    // --- YouTube Backups ---
-    { 
-        id: "somoy_yt", 
-        name: "Somoy TV (YouTube)", 
-        url: "https://www.youtube.com/embed/live_stream?channel=UC751P3_F3D6S32p09L5R1iA", 
-        category: "news", 
-        quality: "HD", 
-        logo: "📰",
-        isYoutube: true
-    },
-    { 
-        id: "jamuna_yt", 
-        name: "Jamuna TV (YouTube)", 
-        url: "https://www.youtube.com/embed/live_stream?channel=UCN6sm8iHiPd0cnoUardDAnw", 
-        category: "news", 
-        quality: "HD", 
-        logo: "📰",
-        isYoutube: true
-    },
-    { 
-        id: "independent_yt", 
-        name: "Independent (YouTube)", 
-        url: "https://www.youtube.com/embed/live_stream?channel=UC7g3bU5z2Y3W57-y-N5K5yA", 
-        category: "news", 
-        quality: "HD", 
-        logo: "📰",
-        isYoutube: true
-    },
-    { 
-        id: "channel24_yt", 
-        name: "Channel 24 (YouTube)", 
-        url: "https://www.youtube.com/embed/live_stream?channel=UCHLqIOMPk20w-6cFgkA90jw", 
-        category: "tv", 
-        quality: "HD", 
-        logo: "📺",
-        isYoutube: true
-    },
-    { 
-        id: "ekattor_yt", 
-        name: "Ekattor TV (YouTube)", 
-        url: "https://www.youtube.com/embed/live_stream?channel=UCuB48s1rE2f-N1Ww4p7l_Ig", 
-        category: "news", 
-        quality: "HD", 
-        logo: "📰",
-        isYoutube: true
+        isLocal: true,
+        isWorldCup: true
     }
 ];
-
 
 // FIFA World Cup schedule data list with official dates in local timezone (+06:00)
 const scheduleMatches = [
@@ -981,7 +1038,6 @@ const scheduleMatches = [
 ];
 
 // DOM Elements
-const sidebarNav = document.getElementById('sidebar-nav');
 const drawerScheduleList = document.getElementById('drawer-schedule-list');
 const scheduleDrawer = document.getElementById('schedule-drawer');
 const drawerOverlay = document.getElementById('drawer-overlay');
@@ -996,7 +1052,6 @@ const currentTitle = document.getElementById('current-title');
 const searchInput = document.getElementById('search');
 const sidebar = document.getElementById('sidebar');
 const sidebarOverlay = document.getElementById('sidebar-overlay');
-const autoplayBanner = document.getElementById('autoplay-banner');
 const volumeIndicator = document.getElementById('volume-indicator');
 
 let currentHls = null;
@@ -1006,78 +1061,13 @@ let favorites = JSON.parse(localStorage.getItem('iptv_favorites')) || [];
 
 // Initialize App
 function initApp() {
-    // Apply saved accent theme
-    const savedTheme = localStorage.getItem('iptv_theme') || 'rose';
-    setAccent(savedTheme);
-
     // Initial render
-    renderSidebarNav();
-    renderChannelGrid(channels);
+    filterByCategory('all');
     renderDrawerSchedule();
 
     // Autoplay implementation: Load and play BTV National immediately on load
     const defaultChannelId = "btv";
     playChannel(defaultChannelId, true); // Pass true to enable autoplay logic
-}
-
-// Render the Sidebar categories and listings
-function renderSidebarNav() {
-    const categories = {
-        favorites: { title: "⭐ Favorites", icon: "⭐", class: "sports", list: [] },
-        sports: { title: "Sports Channels", icon: "⚽", class: "sports", list: [] },
-        tv: { title: "TV Entertainment", icon: "📺", class: "tv", list: [] },
-        news: { title: "News Channels", icon: "📰", class: "news", list: [] }
-    };
-    
-    // Group favorites
-    channels.forEach(ch => {
-        if (favorites.includes(ch.id)) {
-            categories.favorites.list.push(ch);
-        }
-        if (categories[ch.category]) {
-            categories[ch.category].list.push(ch);
-        }
-    });
-    
-    let html = '';
-    
-    for (const [key, cat] of Object.entries(categories)) {
-        if (cat.list.length === 0) {
-            if (key === 'favorites') continue; // Hide favorites section if empty
-        }
-        
-        html += `
-            <div class="nav-category" id="cat-sec-${key}">
-                <div class="nav-category-title">
-                    <span class="cat-icon">${cat.icon}</span>
-                    <span>${cat.title}</span>
-                    <span class="cat-count">${cat.list.length}</span>
-                </div>
-                <ul class="channel-list">
-        `;
-        
-        cat.list.forEach(ch => {
-            const isFav = favorites.includes(ch.id);
-            html += `
-                <li class="channel-item ${currentChannelId === ch.id ? 'active' : ''}" data-id="${ch.id}">
-                    <div class="ch-icon ${cat.class}" onclick="playChannel('${ch.id}')">${ch.logo}</div>
-                    <div class="ch-info" onclick="playChannel('${ch.id}')">
-                        <div class="ch-name">${ch.name}</div>
-                        <div class="ch-quality ${ch.isLocal ? 'local-text' : ch.quality.toLowerCase()}">${ch.isLocal ? '🏠 Local (ISP Only)' : `🌐 Global • ${ch.quality}`}</div>
-                    </div>
-                    <span class="fav-btn-star ${isFav ? 'starred' : ''}" onclick="toggleFavorite(event, '${ch.id}')">★</span>
-                    <div class="live-dot" onclick="playChannel('${ch.id}')"></div>
-                </li>
-            `;
-        });
-        
-        html += `
-                </ul>
-            </div>
-        `;
-    }
-    
-    sidebarNav.innerHTML = html;
 }
 
 // Render Grid Cards
@@ -1239,10 +1229,6 @@ function playChannel(id, isAutoplay = false) {
     currentChannelId = id;
     
     // Update Active states in UI
-    document.querySelectorAll('.channel-item').forEach(item => {
-        if (item.getAttribute('data-id') === id) item.classList.add('active');
-        else item.classList.remove('active');
-    });
     document.querySelectorAll('.channel-card').forEach(card => {
         if (card.getAttribute('data-id') === id) card.classList.add('playing');
         else card.classList.remove('playing');
@@ -1268,7 +1254,6 @@ function playChannel(id, isAutoplay = false) {
         
         // Hide standard custom controls since YouTube handles them natively
         document.querySelector('.player-controls').style.display = 'none';
-        autoplayBanner.style.display = 'none';
     } else {
         // Show standard video, hide YouTube player
         video.style.display = 'block';
@@ -1278,15 +1263,9 @@ function playChannel(id, isAutoplay = false) {
         // Restore controls
         document.querySelector('.player-controls').style.display = 'flex';
         
-        // Autoplay rules: Muted initially to bypass browser restrictions
-        if (isAutoplay) {
-            video.muted = true;
-            updateVolumeButtonState();
-            autoplayBanner.style.display = 'block';
-        } else {
-            video.muted = false;
-            updateVolumeButtonState();
-        }
+        // Autoplay rules: Try unmuted initially (will fall back to muted if blocked)
+        video.muted = false;
+        updateVolumeButtonState();
         
         if (Hls.isSupported()) {
             const hlsConfig = {
@@ -1314,7 +1293,6 @@ function playChannel(id, isAutoplay = false) {
                         console.log("Playback failed. Muting to autoplay.");
                         video.muted = true;
                         updateVolumeButtonState();
-                        autoplayBanner.style.display = 'block';
                         video.play();
                     });
                 }
@@ -1354,7 +1332,6 @@ function playChannel(id, isAutoplay = false) {
                 video.play().catch(e => {
                     video.muted = true;
                     updateVolumeButtonState();
-                    autoplayBanner.style.display = 'block';
                     video.play();
                 });
             });
@@ -1372,19 +1349,9 @@ function playChannel(id, isAutoplay = false) {
     }
 }
 
-// Unmute function linked to the banner click and UI buttons
-function unmuteVideo() {
-    video.muted = false;
-    updateVolumeButtonState();
-    autoplayBanner.style.display = 'none';
-}
-
 function toggleMute() {
     video.muted = !video.muted;
     updateVolumeButtonState();
-    if (!video.muted) {
-        autoplayBanner.style.display = 'none';
-    }
 }
 
 function updateVolumeButtonState() {
@@ -1410,7 +1377,6 @@ function toggleFavorite(event, channelId) {
     
     localStorage.setItem('iptv_favorites', JSON.stringify(favorites));
     
-    renderSidebarNav();
     filterChannels();
 }
 
@@ -1426,6 +1392,8 @@ function filterChannels() {
             matchesCategory = true;
         } else if (selectedCategory === 'favorites') {
             matchesCategory = favorites.includes(ch.id);
+        } else if (selectedCategory === 'worldcup') {
+            matchesCategory = !!ch.isWorldCup;
         } else {
             matchesCategory = ch.category === selectedCategory;
         }
@@ -1439,6 +1407,7 @@ function filterChannels() {
 function filterByCategory(category) {
     selectedCategory = category;
     
+    // Update main section tabs active state
     document.querySelectorAll('.cat-tab').forEach(tab => {
         if (tab.getAttribute('data-cat') === category) {
             tab.classList.add('active');
@@ -1446,27 +1415,39 @@ function filterByCategory(category) {
             tab.classList.remove('active');
         }
     });
-    
-    filterChannels();
-}
 
-// Accent Color Theme Customizer
-function setAccent(themeName) {
-    document.documentElement.setAttribute('data-theme', themeName);
-    localStorage.setItem('iptv_theme', themeName);
-    
-    document.querySelectorAll('.theme-btn').forEach(btn => {
-        if (btn.getAttribute('data-color') === themeName) {
-            btn.classList.add('active');
+    // Update sidebar navigation categories active state
+    document.querySelectorAll('.sidebar-cat-item').forEach(item => {
+        if (item.getAttribute('data-cat') === category) {
+            item.classList.add('active');
         } else {
-            btn.classList.remove('active');
+            item.classList.remove('active');
         }
     });
-}
 
-function toggleThemePanel() {
-    const panel = document.getElementById('theme-panel');
-    panel.classList.toggle('open');
+    // Update main section title
+    const sectionTitle = document.getElementById('section-title');
+    if (sectionTitle) {
+        const titles = {
+            all: "All Channels",
+            worldcup: "World Cup Special",
+            sports: "Sports Channels",
+            tv: "TV Channels",
+            news: "News Channels",
+            favorites: "Favorite Channels"
+        };
+        const emojis = {
+            all: "📺",
+            worldcup: "🏆",
+            sports: "⚽",
+            tv: "📺",
+            news: "📰",
+            favorites: "⭐"
+        };
+        sectionTitle.innerHTML = `<span class="emoji">${emojis[category] || "📺"}</span> ${titles[category] || "Channels"}`;
+    }
+    
+    filterChannels();
 }
 
 // Toggle Sidebar on mobile
@@ -1493,18 +1474,35 @@ function toggleScheduleDrawer(show) {
     }
 }
 
-// Fullscreen controls
+// Fullscreen controls with native support for TV, Mobile (iOS/Android), and Desktop
 function toggleFullscreen() {
-    if (!document.fullscreenElement) {
-        if (videoWrapper.requestFullscreen) {
-            videoWrapper.requestFullscreen();
-        } else if (videoWrapper.webkitRequestFullscreen) {
-            videoWrapper.webkitRequestFullscreen();
-        } else if (video.requestFullscreen) {
+    const isFullscreen = document.fullscreenElement || 
+                         document.webkitFullscreenElement || 
+                         document.mozFullScreenElement || 
+                         document.msFullscreenElement ||
+                         video.webkitDisplayingFullscreen;
+
+    if (!isFullscreen) {
+        if (video.requestFullscreen) {
             video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen(); // Safari / iOS
+        } else if (video.webkitEnterFullscreen) {
+            video.webkitEnterFullscreen(); // iOS iPhone fallback
+        } else if (videoWrapper.requestFullscreen) {
+            videoWrapper.requestFullscreen();
         }
     } else {
-        document.exitFullscreen();
+        const exitFS = document.exitFullscreen || 
+                       document.webkitExitFullscreen || 
+                       document.webkitCancelFullScreen ||
+                       document.mozCancelFullScreen || 
+                       document.msExitFullscreen;
+        if (exitFS) {
+            exitFS.call(document);
+        } else if (video.webkitExitFullscreen) {
+            video.webkitExitFullscreen();
+        }
     }
 }
 

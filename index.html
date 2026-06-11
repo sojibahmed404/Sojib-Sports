@@ -12,20 +12,6 @@
 </head>
 
 <body>
-    <!-- Theme Settings Panel -->
-    <div class="theme-panel" id="theme-panel">
-        <button class="theme-panel-toggle" onclick="toggleThemePanel()" title="Customize Accent Color">⚙️</button>
-        <div class="theme-panel-content">
-            <h4>Accent Theme</h4>
-            <div class="theme-options">
-                <button class="theme-btn active" data-color="rose" style="background: #ff4d6a;" onclick="setAccent('rose')"></button>
-                <button class="theme-btn" data-color="neon" style="background: #a855f7;" onclick="setAccent('neon')"></button>
-                <button class="theme-btn" data-color="emerald" style="background: #10b981;" onclick="setAccent('emerald')"></button>
-                <button class="theme-btn" data-color="amber" style="background: #f59e0b;" onclick="setAccent('amber')"></button>
-                <button class="theme-btn" data-color="cyan" style="background: #06b6d4;" onclick="setAccent('cyan')"></button>
-            </div>
-        </div>
-    </div>
 
     <div class="app-layout">
         <!-- ===== Sidebar ===== -->
@@ -37,10 +23,7 @@
                 </a>
             </div>
 
-            <!-- Autoplay Overlay Banner (if browser blocks sound) -->
-            <div id="autoplay-banner" class="autoplay-banner" style="display:none;" onclick="unmuteVideo()">
-                <span>🔊 Autoplay started muted. Click to unmute sound!</span>
-            </div>
+
 
             <div class="sidebar-search">
                 <div class="search-box">
@@ -50,7 +33,26 @@
             </div>
 
             <nav class="sidebar-nav" id="sidebar-nav">
-                <!-- Sidebar channels will be rendered by JS -->
+                <ul class="sidebar-categories">
+                    <li class="sidebar-cat-item active" data-cat="all" onclick="filterByCategory('all')">
+                        <span class="cat-icon">🏠</span> <span class="cat-name">All Channels</span>
+                    </li>
+                    <li class="sidebar-cat-item" data-cat="worldcup" onclick="filterByCategory('worldcup')">
+                        <span class="cat-icon">🏆</span> <span class="cat-name">World Cup Special</span>
+                    </li>
+                    <li class="sidebar-cat-item" data-cat="sports" onclick="filterByCategory('sports')">
+                        <span class="cat-icon">⚽</span> <span class="cat-name">Sports Channels</span>
+                    </li>
+                    <li class="sidebar-cat-item" data-cat="tv" onclick="filterByCategory('tv')">
+                        <span class="cat-icon">📺</span> <span class="cat-name">TV Channels</span>
+                    </li>
+                    <li class="sidebar-cat-item" data-cat="news" onclick="filterByCategory('news')">
+                        <span class="cat-icon">📰</span> <span class="cat-name">News Channels</span>
+                    </li>
+                    <li class="sidebar-cat-item" data-cat="favorites" onclick="filterByCategory('favorites')">
+                        <span class="cat-icon">⭐</span> <span class="cat-name">Favorites</span>
+                    </li>
+                </ul>
             </nav>
 
             <div class="sidebar-footer">
@@ -140,13 +142,14 @@
                 <!-- Channel Cards Grid -->
                 <section class="channels-section">
                     <div class="section-header">
-                        <h2><span class="emoji">📺</span> All Channels</h2>
+                        <h2 id="section-title"><span class="emoji">📺</span> All Channels</h2>
                         <div class="category-tabs" id="category-tabs">
                             <button class="cat-tab active" data-cat="all" onclick="filterByCategory('all')">All</button>
-                            <button class="cat-tab" data-cat="favorites" onclick="filterByCategory('favorites')">⭐ Favorites</button>
+                            <button class="cat-tab" data-cat="worldcup" onclick="filterByCategory('worldcup')">🏆 World Cup</button>
                             <button class="cat-tab" data-cat="sports" onclick="filterByCategory('sports')">⚽ Sports</button>
                             <button class="cat-tab" data-cat="tv" onclick="filterByCategory('tv')">📺 TV Channel</button>
                             <button class="cat-tab" data-cat="news" onclick="filterByCategory('news')">📰 News</button>
+                            <button class="cat-tab" data-cat="favorites" onclick="filterByCategory('favorites')">⭐ Favorites</button>
                         </div>
                     </div>
 
