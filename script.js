@@ -1228,6 +1228,10 @@ function playChannel(id, isAutoplay = false) {
     
     currentChannelId = id;
     
+    // Hide the unmute overlay notice
+    const unmuteOverlay = document.getElementById('unmute-overlay');
+    if (unmuteOverlay) unmuteOverlay.style.display = 'none';
+    
     // Update Active states in UI
     document.querySelectorAll('.channel-card').forEach(card => {
         if (card.getAttribute('data-id') === id) card.classList.add('playing');
@@ -1289,10 +1293,26 @@ function playChannel(id, isAutoplay = false) {
                 if (playPromise !== undefined) {
                     playPromise.then(() => {
                         console.log("Stream playback started!");
+                        const unmuteOverlay = document.getElementById('unmute-overlay');
+                        if (unmuteOverlay) unmuteOverlay.style.display = 'none';
                     }).catch(error => {
                         console.log("Playback failed. Muting to autoplay.");
                         video.muted = true;
                         updateVolumeButtonState();
+                        
+                        const unmuteOverlay = document.getElementById('unmute-overlay');
+                        if (unmuteOverlay) unmuteOverlay.style.display = 'flex';
+                        
+                        // Automatically unmute when the user clicks anywhere on the page
+                        document.addEventListener('click', function autoUnmute() {
+                            if (video.muted) {
+                                video.muted = false;
+                                updateVolumeButtonState();
+                                if (unmuteOverlay) unmuteOverlay.style.display = 'none';
+                            }
+                            document.removeEventListener('click', autoUnmute);
+                        }, { once: true });
+                        
                         video.play();
                     });
                 }
@@ -1329,9 +1349,26 @@ function playChannel(id, isAutoplay = false) {
         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
             video.src = channel.url;
             video.addEventListener('canplay', function() {
-                video.play().catch(e => {
+                video.play().then(() => {
+                    const unmuteOverlay = document.getElementById('unmute-overlay');
+                    if (unmuteOverlay) unmuteOverlay.style.display = 'none';
+                }).catch(e => {
                     video.muted = true;
                     updateVolumeButtonState();
+                    
+                    const unmuteOverlay = document.getElementById('unmute-overlay');
+                    if (unmuteOverlay) unmuteOverlay.style.display = 'flex';
+                    
+                    // Automatically unmute when the user clicks anywhere on the page
+                    document.addEventListener('click', function autoUnmute() {
+                        if (video.muted) {
+                            video.muted = false;
+                            updateVolumeButtonState();
+                            if (unmuteOverlay) unmuteOverlay.style.display = 'none';
+                        }
+                        document.removeEventListener('click', autoUnmute);
+                    }, { once: true });
+                    
                     video.play();
                 });
             });
@@ -1349,9 +1386,20 @@ function playChannel(id, isAutoplay = false) {
     }
 }
 
+function unmuteVideo() {
+    video.muted = false;
+    updateVolumeButtonState();
+    const unmuteOverlay = document.getElementById('unmute-overlay');
+    if (unmuteOverlay) unmuteOverlay.style.display = 'none';
+}
+
 function toggleMute() {
     video.muted = !video.muted;
     updateVolumeButtonState();
+    if (!video.muted) {
+        const unmuteOverlay = document.getElementById('unmute-overlay');
+        if (unmuteOverlay) unmuteOverlay.style.display = 'none';
+    }
 }
 
 function updateVolumeButtonState() {

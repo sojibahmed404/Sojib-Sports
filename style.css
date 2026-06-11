@@ -500,6 +500,29 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+.unmute-overlay {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--accent-gradient);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 77, 106, 0.35);
+    z-index: 8;
+    display: none;
+    align-items: center;
+    gap: 8px;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    animation: slideDown 0.3s ease;
+}
+.unmute-overlay:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 77, 106, 0.5);
+}
 .play-btn-big {
     width: 76px;
     height: 76px;
