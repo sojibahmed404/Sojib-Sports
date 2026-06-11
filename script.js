@@ -1064,10 +1064,6 @@ function initApp() {
     // Initial render
     filterByCategory('all');
     renderDrawerSchedule();
-
-    // Autoplay implementation: Load and play BTV National immediately on load
-    const defaultChannelId = "btv";
-    playChannel(defaultChannelId, true); // Pass true to enable autoplay logic
 }
 
 // Render Grid Cards
@@ -1227,6 +1223,22 @@ function playChannel(id, isAutoplay = false) {
     if (!channel) return;
     
     currentChannelId = id;
+    
+    // Show the player section
+    const playerSection = document.getElementById('player-section');
+    if (playerSection) {
+        playerSection.style.display = 'block';
+    }
+    
+    // Toggle Network Info Banner (only show for Local channels)
+    const netBanner = document.getElementById('network-info-banner');
+    if (netBanner) {
+        if (channel.isLocal) {
+            netBanner.style.display = 'flex';
+        } else {
+            netBanner.style.display = 'none';
+        }
+    }
     
     // Hide the unmute overlay notice
     const unmuteOverlay = document.getElementById('unmute-overlay');
