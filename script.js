@@ -2044,12 +2044,15 @@ function playChannel(id, isAutoplay = false) {
         
         if (Hls.isSupported()) {
             const hlsConfig = {
-                maxBufferSize: 30 * 1024 * 1024,
-                maxBufferLength: 30,
-                liveSyncDuration: 3,
-                enableWorker: true,
-                lowLatencyMode: true,
-                capLevelToPlayerSize: false
+                maxBufferSize: 80 * 1024 * 1024, // 80MB buffer size limit
+                maxBufferLength: 45,             // Keep up to 45 seconds of buffer
+                maxMaxBufferLength: 90,          // Max buffer up to 90 seconds
+                liveSyncDuration: 6,             // Start 6 seconds behind live edge to prevent lag drops
+                liveMaxLatencyDuration: 15,      // Allow drift up to 15 seconds before forcing jump
+                enableWorker: true,              // Run parsing in worker thread
+                lowLatencyMode: false,           // Disable low-latency mode to allow robust buffer ahead
+                capLevelToPlayerSize: false,     // Keep high resolution even if player size is small
+                highBufferWatchdogPeriod: 2      // Frequency to recover from stalls
             };
             
             const hls = new Hls(hlsConfig);
