@@ -11,13 +11,21 @@ const channels = [
     },
     { 
         id: "tsports", 
-        name: "T Sports HD (Local)", 
+        name: "T Sports HD", 
         url: "http://172.16.29.2:8090/hls/tsportshd.m3u8", 
         category: "sports", 
         quality: "HD", 
         logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/T_Sports_logo.svg",
-        isWorldCup: true,
-        isLocal: true
+        isWorldCup: true
+    },
+    {
+        id: "somoy_sports",
+        name: "Somoy TV (Live Sports)",
+        url: "http://172.16.29.2:8090/hls/somoytv.m3u8",
+        category: "sports",
+        quality: "HD",
+        logo: "https://upload.wikimedia.org/wikipedia/en/c/c4/SOMOY_TV_Logo.svg",
+        isWorldCup: true
     },
     { 
         id: "somoy_local", 
